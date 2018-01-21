@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  
+<!-- Start button -->
+<div id="startContainer">
+  <h1 class="title">Charlotte Trivia</h1>
+  <button id="start_button"><h3>Start Quiz</h3></button>
+</div>
+<!-- Game Container -->
+<div id="gameContainer">
+  <h1 class="title">Charlotte Trivia</h1>
+  <!-- Timer -->
+  <h1 id="timerLine">Time Remaining: <span id="timeLeft">60 Seconds</span></h1>
+  <!-- Quesions -->
+  <h2>Where State is Charlotte located in?</h2>
+  <input type="radio" id="q1" value="1">North Carolina
+  <input type="radio" id="q1" value="0">South Carolina
+  <input type="radio" id="q1" value="0">Tennesse
+  <input type="radio" id="q1" value="0">Virginia
+
+  <h2>Where did we get our name from?</h2>
+  <input type="radio" id="q2" value="0">Queen Elizabeth
+  <input type="radio" id="q2" value="1">Queen Charlotte
+  <input type="radio" id="q2" value="0">King Charles
+  <input type="radio" id="q2" value="0">King George III
+
+  <h2>What do we call central Charlotte?</h2>
+  <input type="radio" id="q3" value="0">Downtown
+  <input type="radio" id="q3" value="0">City Center
+  <input type="radio" id="q3" value="0">The Hub
+  <input type="radio" id="q3" value="1">Uptown
+  
+  <h2>What county is Charlotte located in?</h2>
+  <input type="radio" id="q4" value="0">Charlotte County
+  <input type="radio" id="q4" value="0">Gaston County
+  <input type="radio" id="q4" value="1">Mecklenburg County
+  <input type="radio" id="q4" value="0">Union County
+  
+  <h2>What is our nickname?</h2>
+  <input type="radio" id="q5" value="0">The Hornets
+  <input type="radio" id="q5" value="1">Queen City
+  <input type="radio" id="q5" value="0">Gold City
+  <input type="radio" id="q5" value="0">Blue City
+
+  <h2>Which industry do we rank 2nd in the US?</h2>
+  <input type="radio" id="q6" value="1">Banking
+  <input type="radio" id="q6" value="0">Healthcare
+  <input type="radio" id="q6" value="0">Energy
+  <input type="radio" id="q6" value="0">Technology
+  
+  <h2>What is the Name of our Football Arena?</h2>
+  <input type="radio" id="q7" value="0">Hornet's Nest
+  <input type="radio" id="q7" value="0">Phillips Arena
+  <input type="radio" id="q7" value="1">Bank of America Stadium
+  <input type="radio" id="q7" value="0">Spectrum Center
+  
+  <h2>Which is not located within Charlotte's city limits?</h2>
+  <input type="radio" id="q8" value="0">Nascar Hall of Fame
+  <input type="radio" id="q8" value="0">Discovery Center
+  <input type="radio" id="q8" value="1">Charlotte Motor Speedway
+  <input type="radio" id="q8" value="0">Charlotte Douglas International Airport
+  
+  <h2>Which is the largest hotel in Uptown Charlotte</h2>
+  <input type="radio" id="q9" value="0">Marriott City Center
+  <input type="radio" id="q9" value="0">Hilton City Center
+  <input type="radio" id="q9" value="0">Great Wolf Lodge
+  <input type="radio" id="q9" value="1">The Westin
+
+  <h2>Which is the largest shopping mall in the Charlotte Area?</h2>
+  <input type="radio" id="q10" value="0">South Park Mall
+  <input type="radio" id="q10" value="1">Concord Mills
+  <input type="radio" id="q10" value="0">Charlotte Premium Outlets
+  <input type="radio" id="q10" value="0">Northlake Mall
+  
+  <br><br>
+  <button type="submit"><H3>Submit Answers</H3></button>
+</div>
+<div id="resultsBox">
+  <h1 class="title">Charlotte Trivia</h1>
+  <h2 id="done">Done!</h2>
+  <h2>Correct Answers: <span id="correctAnswers">0</span></h2>
+	<h2>Incorrect Answers: <span id="wrongAnswers">0</span></h2>
+  <h2>Unanswered: <span id="unanswered">0</span></h2>
+</div>
+
+<!-- Link in jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<!-- Link in JavaScript -->
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
