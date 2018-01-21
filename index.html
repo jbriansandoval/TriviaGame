@@ -10,81 +10,82 @@
 <body>
   
 <!-- Start button -->
-<div id="startContainer">
-  <h1 class="title">Charlotte Trivia</h1>
+<div class="title" id="startContainer">
+  <h1 >Charlotte Trivia</h1>
+  <br><br>
   <button id="start_button"><h3>Start Quiz</h3></button>
 </div>
 <!-- Game Container -->
-<div id="gameContainer">
-  <h1 class="title">Charlotte Trivia</h1>
+<div class="game" id="gameContainer">
+  <h1 class="game-title">Charlotte Trivia</h1>
   <!-- Timer -->
-  <h1 id="timerLine">Time Remaining: <span id="timeLeft">60 Seconds</span></h1>
+  <h2 id="timerLine">Time Remaining: <span id="timeLeft">60 Seconds</span></h2>
   <!-- Quesions -->
   <h2>Where State is Charlotte located in?</h2>
-  <input type="radio" id="q1" value="1">North Carolina
-  <input type="radio" id="q1" value="0">South Carolina
-  <input type="radio" id="q1" value="0">Tennesse
-  <input type="radio" id="q1" value="0">Virginia
+  <input type="radio" name="q1" id="q1" value="1">North Carolina
+  <input type="radio" name="q1" id="q1" value="0">South Carolina
+  <input type="radio" name="q1" id="q1" value="0">Tennesse
+  <input type="radio" name="q1" id="q1" value="0">Virginia
 
   <h2>Where did we get our name from?</h2>
-  <input type="radio" id="q2" value="0">Queen Elizabeth
-  <input type="radio" id="q2" value="1">Queen Charlotte
-  <input type="radio" id="q2" value="0">King Charles
-  <input type="radio" id="q2" value="0">King George III
-
+  <input type="radio" name="q2" id="q2" value="0">Queen Elizabeth
+  <input type="radio" name="q2" id="q2" value="1">Queen Charlotte
+  <input type="radio" name="q2" id="q2" value="0">King Charles
+  <input type="radio" name="q2" id="q2" value="0">King George III
+ 
   <h2>What do we call central Charlotte?</h2>
-  <input type="radio" id="q3" value="0">Downtown
-  <input type="radio" id="q3" value="0">City Center
-  <input type="radio" id="q3" value="0">The Hub
-  <input type="radio" id="q3" value="1">Uptown
+  <input type="radio" name="q3" id="q3" value="0">Downtown
+  <input type="radio" name="q3" id="q3" value="0">City Center
+  <input type="radio" name="q3" id="q3" value="0">The Hub
+  <input type="radio" name="q3" id="q3" value="1">Uptown
   
   <h2>What county is Charlotte located in?</h2>
-  <input type="radio" id="q4" value="0">Charlotte County
-  <input type="radio" id="q4" value="0">Gaston County
-  <input type="radio" id="q4" value="1">Mecklenburg County
-  <input type="radio" id="q4" value="0">Union County
+  <input type="radio" name="q4" id="q4" value="0">Charlotte County
+  <input type="radio" name="q4" id="q4" value="0">Gaston County
+  <input type="radio" name="q4" id="q4" value="1">Mecklenburg County
+  <input type="radio" name="q4" id="q4" value="0">Union County -->
   
   <h2>What is our nickname?</h2>
-  <input type="radio" id="q5" value="0">The Hornets
-  <input type="radio" id="q5" value="1">Queen City
-  <input type="radio" id="q5" value="0">Gold City
-  <input type="radio" id="q5" value="0">Blue City
+  <input type="radio" name="q5"id="q5" value="0">The Hornets
+  <input type="radio" name="q5"id="q5" value="1">Queen City
+  <input type="radio" name="q5"id="q5" value="0">Gold City
+  <input type="radio" name="q5"id="q5" value="0">Blue City
 
   <h2>Which industry do we rank 2nd in the US?</h2>
-  <input type="radio" id="q6" value="1">Banking
-  <input type="radio" id="q6" value="0">Healthcare
-  <input type="radio" id="q6" value="0">Energy
-  <input type="radio" id="q6" value="0">Technology
+  <input type="radio" name="q6" id="q6" value="1">Banking
+  <input type="radio" name="q6" id="q6" value="0">Healthcare
+  <input type="radio" name="q6" id="q6" value="0">Energy
+  <input type="radio" name="q6" id="q6" value="0">Technology
   
   <h2>What is the Name of our Football Arena?</h2>
-  <input type="radio" id="q7" value="0">Hornet's Nest
-  <input type="radio" id="q7" value="0">Phillips Arena
-  <input type="radio" id="q7" value="1">Bank of America Stadium
-  <input type="radio" id="q7" value="0">Spectrum Center
+  <input type="radio" name="q7" id="q7" value="0">Hornet's Nest
+  <input type="radio" name="q7" id="q7" value="0">Phillips Arena
+  <input type="radio" name="q7" id="q7" value="1">Bank of America Stadium
+  <input type="radio" name="q7" id="q7" value="0">Spectrum Center
   
   <h2>Which is not located within Charlotte's city limits?</h2>
-  <input type="radio" id="q8" value="0">Nascar Hall of Fame
-  <input type="radio" id="q8" value="0">Discovery Center
-  <input type="radio" id="q8" value="1">Charlotte Motor Speedway
-  <input type="radio" id="q8" value="0">Charlotte Douglas International Airport
+  <input type="radio" name="q8" id="q8" value="0">Nascar Hall of Fame
+  <input type="radio" name="q8" id="q8" value="0">Discovery Center
+  <input type="radio" name="q8" id="q8" value="1">Charlotte Motor Speedway
+  <input type="radio" name="q8" id="q8" value="0">Charlotte Douglas International Airport
   
   <h2>Which is the largest hotel in Uptown Charlotte</h2>
-  <input type="radio" id="q9" value="0">Marriott City Center
-  <input type="radio" id="q9" value="0">Hilton City Center
-  <input type="radio" id="q9" value="0">Great Wolf Lodge
-  <input type="radio" id="q9" value="1">The Westin
+  <input type="radio" name="q9" id="q9" value="0">Marriott City Center
+  <input type="radio" name="q9" id="q9" value="0">Hilton City Center
+  <input type="radio" name="q9" id="q9" value="0">Great Wolf Lodge
+  <input type="radio" name="q9" id="q9" value="1">The Westin
 
   <h2>Which is the largest shopping mall in the Charlotte Area?</h2>
-  <input type="radio" id="q10" value="0">South Park Mall
-  <input type="radio" id="q10" value="1">Concord Mills
-  <input type="radio" id="q10" value="0">Charlotte Premium Outlets
-  <input type="radio" id="q10" value="0">Northlake Mall
+  <input type="radio" name="q10" id="q10" value="0">South Park Mall
+  <input type="radio" name="q10" id="q10" value="1">Concord Mills
+  <input type="radio" name="q10" id="q10" value="0">Charlotte Premium Outlets
+  <input type="radio" name="q10" id="q10" value="0">Northlake Mall
   
   <br><br>
-  <button type="submit"><H3>Submit Answers</H3></button>
+  <button id="end_button" type="submit"><H3>Submit Answers</H3></button>
 </div>
-<div id="resultsBox">
-  <h1 class="title">Charlotte Trivia</h1>
+<div class= "results" id="resultsBox">
+  <h1>Charlotte Trivia</h1>
   <h2 id="done">Done!</h2>
   <h2>Correct Answers: <span id="correctAnswers">0</span></h2>
 	<h2>Incorrect Answers: <span id="wrongAnswers">0</span></h2>

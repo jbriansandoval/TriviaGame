@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   var count=60;
   
@@ -19,18 +20,6 @@ $(document).ready(function(){
       startCountdown();
       return;
     });
-    
-    $("#end_button").on("click", function(){
-  
-      // Hide the start Div from screen
-      $("#gameContainer").hide();
-      // Show the Game Div
-      $("#resultsBox").show();
-  
-      timeUp();
-      return;
-    });
-
     function countdown(){
       // Decrement the counter, down from 60 seconds
       count--;
@@ -51,7 +40,7 @@ $(document).ready(function(){
           }
       }
       function startCountdown(){
-         setInterval(countdown, 1000);
+         setInterval(countdown, 100);
       }
       function timeUp(){
         // Checked values of Radio Buttons
@@ -65,7 +54,14 @@ $(document).ready(function(){
         var Q8 = $('input:radio[name="q8"]:checked').val();
         var Q9 = $('input:radio[name="q9"]:checked').val();
         var Q10 = $('input:radio[name="q10"]:checked').val();
+        console.log("Q1" + Q1)
         if(Q1 == undefined){
+            $('.button').on('mouseenter', function () {
+              $(this).addClass('active');
+            });
+            $('.button').on('mouseleave', function () {
+              $(this).removeClass('active');
+            });
           unanswered++;
         }else if(Q1 === "1"){
           correctAnswers++;
@@ -127,6 +123,13 @@ $(document).ready(function(){
           wrongAnswers++;
         }
         
+        // $('.button').on('mouseenter', function () {
+        //   $(this).addClass('active');
+        // });
+        // $('.button').on('mouseleave', function () {
+        //   $(this).removeClass('active');
+        // });
+        
   
         // After answers are validated, display the score results
         $("#correctAnswers").html(correctAnswers);
@@ -136,6 +139,11 @@ $(document).ready(function(){
   
         // Show the completed Score Div
         $("#resultsBox").show();
+  
+  
       }
   });
   
+  {/* <h2>Correct Answers: <span id="correctAnswers">0</span></h2>
+  <h2>Incorrect Answers: <span id="wrongAnswers">0</span></h2>
+  <h2>Unanswered: <span id="unanswered">0</span></h2> */}
